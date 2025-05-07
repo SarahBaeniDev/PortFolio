@@ -18,6 +18,7 @@ body{
     overflow: scroll;
     display: flex;
     flex-direction: column;
+    z-index: 5;
 }
 .navbar img{
     position: absolute;
@@ -27,7 +28,7 @@ body{
     border-radius: 50%;
     border: 10px solid #444242a1;
     top: -5px;
-    /* display: block; */
+
 }
 .navbar h3{
     position: absolute;
@@ -42,10 +43,8 @@ body{
     margin-top: 210px;
     justify-content: center;
     top: -3rem;
-    
 }
-.menu-toggle a /*.menu-toggle a svg*/
-    {
+.menu-toggle a{
     padding: 10px;
     color: white;
     background-color: #494747;
@@ -59,9 +58,7 @@ body{
     position: relative;
     top: 15rem;
     left: -5rem;
-
 }
-
 .navbar ul li{
     list-style-type: none;
     margin: 30px;
@@ -75,5 +72,29 @@ body{
 .navbar ul li a i{
     margin-right: 10px;
 }
-/* principal main */
-
+.principal{
+    margin-left: 250px;
+} 
+.sec1{
+    position: relative;
+}
+.principal .sec1 .img{
+    position: relative;;
+    background-color: #06101b;
+}
+.principal .sec1 .img img{
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: relative;
+}
+.iam{
+    position: relative;
+    top: 20rem;
+    left: 10rem;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    z-index: 12;
+}
