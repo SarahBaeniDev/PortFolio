@@ -4,75 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <title>iPortfolio Clone</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
-    <title>PortFolioSarah</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <aside class="navbar">
-        <img src="images/my-profile-img.jpg">
-        <h3>Alex Smith</h3>
 
-        <div class="menu-toggle">
-            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path
-                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                </svg></a>
-            <a href="#" class=""><i class="bi bi-facebook"></i></a>
-            <a href="#" class=""><i class="bi bi-instagram"></i></a>
-            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-skype" viewBox="0 0 16 16">
-                    <path
-                        d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063" />
-                </svg> </a>
-            <a href="#" class=""><i class="bi bi-linkedin"></i></a>
+    <!-- Slide bar start -->
+    <aside id="sidebar" class="sidebar">
+        <div class="profile">
+            <img src="images/my-profile-img.jpg" alt="Profile" class="profile-img">
+            <h1 class="name"><a href="index.html">Alex Smith</a></h1>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
         </div>
-        <ul>
-            <li><a href="#"><i class="bi bi-house"></i>Home</a></li>
-            <li><a href="#"><i class="bi bi-person"></i>About</a></li>
-            <li><a href="#"><i class="bi bi-file-earmark-text"></i>Resume</a></li>
-            <li><a href="#"><i class="bi bi-images"></i>PortFolio</a></li>
-            <li><a href="#"><i class="bi bi-menu-down"></i>Services</a></li>
-            <li><a href="#"><i class="bi bi-menu-button"></i>DropDown</a></li>
-            <li><a href="#"><i class="bi bi-menu-button"></i>Contact</a></li>
-        </ul>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="active"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="bi bi-person"></i> <span>About</span></a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark"></i> <span>Resume</span></a></li>
+                <li><a href="#portfolio"><i class="bi bi-images"></i> <span>Portfolio</span></a></li>
+                <li><a href="#services"><i class="bi bi-cogs"></i> <span>Services</span></a></li>
+
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle"><i class="bi bi-menu-button"></i> <span>DropDown</span> <i
+                            class="bi bi-chevron-down"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li class="deep-dropdown">
+                            <input type="checkbox" id="deep-dropdown-toggle">
+                            <label for="deep-dropdown-toggle">Deep Dropdown <i class="bi bi-chevron-right"></i></label>
+                            <ul class="submenu">
+                                <li><a href="#">Deep Dropdown 1</a></li>
+                                <li><a href="#">Deep Dropdown 2</a></li>
+                                <li><a href="#">Deep Dropdown 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav>
     </aside>
-    <main class="principal">
-        <!-- first section -->
-        <section class="sec1">
-            <div class="iam">
-                <h1>Alex Smith</h1>
-                <p>I'm <span>developper</span></p>
-            </div>
-            <div class="img">
-                <img src="images/hero-bg.jpg" alt="">
-            </div>
-        </section>
+    <!-- Slide bar end -->
 
-        <!-- second section -->
-         <section class="sec2">
-            <h2>About</h2>
-         </section>
-    </main>
+   
 
-    <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
