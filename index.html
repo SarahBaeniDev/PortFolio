@@ -1,11 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolioSarah</title>
+    <title>iPortfolio Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- Slide bar start -->
+    <aside id="sidebar" class="sidebar">
+        <div class="profile">
+            <img src="images/my-profile-img.jpg" alt="Profile" class="profile-img">
+            <h1 class="name"><a href="index.html">Alex Smith</a></h1>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="active"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="bi bi-person"></i> <span>About</span></a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark"></i> <span>Resume</span></a></li>
+                <li><a href="#portfolio"><i class="bi bi-images"></i> <span>Portfolio</span></a></li>
+                <li><a href="#services"><i class="bi bi-cogs"></i> <span>Services</span></a></li>
+
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle"><i class="bi bi-menu-button"></i> <span>DropDown</span> <i
+                            class="bi bi-chevron-down"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li class="deep-dropdown">
+                            <input type="checkbox" id="deep-dropdown-toggle">
+                            <label for="deep-dropdown-toggle">Deep Dropdown <i class="bi bi-chevron-right"></i></label>
+                            <ul class="submenu">
+                                <li><a href="#">Deep Dropdown 1</a></li>
+                                <li><a href="#">Deep Dropdown 2</a></li>
+                                <li><a href="#">Deep Dropdown 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Slide bar end -->
+
+    <!-- Section Hero start -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <h1>Alex Smith</h1>
+                <p>I'm a <span class="typed">Designer, Developer, Freelancer</span></p>
+            </div>
+            <div class="hero-img" style="background-color: rgba(0, 0, 0, 0.9);
+            object-fit: cover;
+            z-index: 1;">
+                <img src="images/hero-bg.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Section Hero end -->
+
+    <!-- About Section start-->
+    <section class="position" id="about">
+        <div class="container">
+            <h2 class="under-score h2">About</h2>
+            <p class="description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/my-profile-img.jpg" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h3>Designer & Web Developer</h3>
+                    <p>
+                        I am a passionate developer with experience in creating beautiful and functional websites.
+                    </p>
+                    <div class="about-right">
+                        <div class="first">
+                            <ul>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Birthday:</strong> <span>1 May
+                                        1995</span></li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Website:</strong>
+                                    <span>www.example.com</span>
+                                </li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Phone:</strong> <span>+123 456
+                                        7890</span></li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>City:</strong> <span>New York,
+                                        USA</span></li>
+                            </ul>
+                        </div>
+                        <div class="second">
+                            <ul>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Age:</strong> <span>30</span>
+                                </li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Degree:</strong>
+                                    <span>Master</span>
+                                </li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Email:</strong>
+                                    <span>email@example.com</span>
+                                </li>
+                                <li><i class="bi bi-chevron-compact-right"></i><strong>Freelance:</strong>
+                                    <span>Available</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non natus animi excepturi earum!
+                            <br>Illo quod quibusdam incidunt odit fuga hic sed. Non et cupiditate veritatis obcaecati
+                            <br>quam explicabo quae quaerat!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end-->
+
+    <!-- Facts section start -->
+    <section id="facts" class="position">
+        <div class="container">
+            <div class="facts-container">
+                <div class="fact-item">
+                    <i class="fas fa-smile"></i>
+                    <span class="counter">232</span>
+                    <p><strong><i class="bi bi-smile"></i> Happy Clients</strong></p>
+                </div>
+                <div class="fact-item">
+                    <i class="fas fa-folder-open"></i>
+                    <span class="counter">521</span>
+                    <p><strong>Projects</strong></p>
+                </div>
+                <div class="fact-item">
+                    <i class="fas fa-headset"></i>
+                    <span class="counter">1463</span>
+                    <p><strong>Hours Of Support</strong></p>
+                </div>
+                <div class="fact-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span class="counter">15</span>
+                    <p><strong>Hard Workers</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Facts section end -->
+
+    <!-- skills section start -->
+    <section class="position">
+        <div class="container">
+            <h2 class="under-score h2">Skills</h2>
+            <p class="description">Voici quelques-unes de mes compétences professionnelles :</p>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 100%;">100%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar">
+                    <div class="skill-fill">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">WordPress/CMS</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Photoshop</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 55%;">55%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section end -->
+
+    <!-- Resume section start -->
+    <section class="position">
+        <div class="container">
+            <div class="">
+                <h2 class="under-score h2">Resume</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore libero
+                    consequuntur nostrum unde rem praesentium quisquam dignissimos, perspiciatis expedita voluptatem non
+                    itaque ea tenetur. Impedit quis illo quasi beatae! Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Unde rem repellendus natus labore pariatur magnam debitis eos at, omnis, recusandae veritatis,
+                    quod placeat! Debitis suscipit corrupti quia molestiae sapiente at!</p>
+            </div>
+            <div class="container-resume">
+                <div class="resume-left">
+                    <div class="sumary">
+                        <h2>Sumary</h2>
+                        <div class="m">
+                            <div class="circle"></div>
+                            <div>
+                                <h3>Brandon Johnson</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non aspernatur nam omnis?
+                                    Illum
+                                    quod temporibus, sint aspernatur a dolores totam recusandae unde. Assumenda vero,
+                                    error
+                                    perferendis tempore a reiciendis pariatur.</p>
+                                <ul>
+                                    <li>Portland par 127,Orlando, FL</li>
+                                    <li>(123) 456-7891</li>
+                                    <li>alice.barkley@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sumary">
+                        <h2>Education</h2>
+                        <div class="m">
+                            <div class="circle"></div>
+                            <div>
+                                <h3>Master of Fine Arts & Graphic Design</h3>
+                                <p>2015 - 2016</p>
+                                <p>Rochester Institute of Technology, Rochester, NY</p>
+                                <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit.
+                                    Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                            </div>
+                        </div>
+                        <div class="m">
+                            <div class="circle"></div>
+                            <div>
+                                <h3>Bachelor of Fine Arts & Graphic Design</h3>
+                                <p>2010 - 2014</p>
+                                <p>Rochester Institute of Technology, Rochester, NY</p>
+                                <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis
+                                    Eius
+                                    vel
+                                    ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae
+                                    consequatur neque etlon sader mart dila</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-right">
+                    <div class="summary-y">
+                        <h2>Professional Experience</h2>
+                        <div class="m">
+                            <div class="circle"></div>
+                            <div>
+                                <h3>Senior graphic design specialist</h3>
+                                <p>2019 - Present</p>
+                                <p>Experion, New York, NY</p>
+                                <ul>
+                                    <li>Lead in the design, development, and implementation of the graphic, layout, and
+                                        production communication materials</li>
+                                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all
+                                        aspects of the project.</li>
+                                    <li>Supervise the assessment of all graphic materials in order to ensure quality and
+                                        accuracy of the design</li>
+                                    <li>Oversee the efficient use of production project budgets ranging from $2,000 -
+                                        $25,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-y">
+                        <div class="m">
+                            <div class="circle"></div>
+                            <div>
+                                <h3>Graphic design specialist</h3>
+                                <p>2017 - 2018</p>
+                                <p>Stepping Stone Advertising, New York, NY</p>
+                                <ul>
+                                    <li>Developed numerous marketing programs (logos, brochures,infographics,
+                                        presentations,
+                                        and
+                                        advertisements).</li>
+                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                                    <li>Recommended and consulted with clients on the most appropriate graphic design
+                                    </li>
+                                    <li>Created 4+ design presentations and proposals a month for clients and account
+                                        managers
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Resume section end -->
+
+    <!-- portfolio section start -->
+    <section class="position" id="portfolio">
+        <div class="container">
+            <h2 class="under-score h2">PortFolio</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dolorem
+                perferendis,
+                illum incidunt in
+                natus animi, tenetur unde accusantium commodi consequuntur quasi eius id voluptatum ab iste vero
+                delectus
+                excepturi?</p>
+            <div class="portfolio-menu">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Book</a></li>
+                </ul>
+            </div>
+            <div class="images-portfolio">
+                <div class="position-img">
+                    <img src="images/app-1.jpg" alt="">
+                    <img src="images/app-2.jpg" alt="">
+                    <img src="images/app-3.jpg" alt="">
+                    <img src="images/books-1.jpg" alt="">
+                </div>
+                <div class="position-img">
+                    <img src="images/branding-2.jpg" alt="">
+                    <img src="images/branding-3.jpg" alt="">
+                    <img src="images/product-1.jpg" alt="">
+                    <img src="images/app-1.jpg" alt="">
+                </div>
+                <div class="position-img">
+                    <img src="images/app-2.jpg" alt="">
+                    <img src="images/app-3.jpg" alt="">
+                    <img src="images/books-2.jpg" alt="">
+                    <img src="images/books-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section start -->
+
+    <!-- services section start -->
+     <section class="Service-st" id="service">
+        <div class="container">
+            <h2 class="under-score h2">Services</h2>
+            <p class="description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="services">
+                <div class="service">
+                    <div class="left">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="left">
+                        <i class="bi bi-card-checklist"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Dolor Sitema</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="left">
+                        <<i class="bi bi-bar-chart"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Sed up perspiciatis</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <div class="left">
+                        <i class="bi bi-binoculars"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                    </div>
+                </div>
+                <div class="service"><div class="left">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+                <div class="right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                </div></div>
+                <div class="service"><div class="left">
+                    <i class="bi bi-calendar4-week"></i>
+                </div>
+                <div class="right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae necessitatibus vitae ab.</p>
+                </div></div>
+            </div>
+
+        </div>
+     </section>
+    <!-- services section end -->
+
+    <!-- footer start -->
+    <div class="copyright">
+        <p>copyright 2025 <a href="">Sarah Dev</a> Tous droits reserves</p>
+    </div>
+    <!-- footer ende -->
 </body>
+
 </html>
