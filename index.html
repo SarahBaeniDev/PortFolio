@@ -12,9 +12,8 @@
 </head>
 
 <body>
-
     <!-- Slide bar start -->
-    <aside id="sidebar" class="sidebar">
+    <aside id="sidebar">
         <div class="profile">
             <img src="images/my-profile-img.jpg" alt="Profile" class="profile-img">
             <h1 class="name"><a href="index.html">Alex Smith</a></h1>
@@ -25,14 +24,13 @@
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
-
         <nav class="nav-menu">
             <ul>
                 <li><a href="#hero" class="active"><i class="bi bi-house-door"></i> <span>Home</span></a></li>
                 <li><a href="#about"><i class="bi bi-person"></i> <span>About</span></a></li>
                 <li><a href="#resume"><i class="bi bi-file-earmark"></i> <span>Resume</span></a></li>
                 <li><a href="#portfolio"><i class="bi bi-images"></i> <span>Portfolio</span></a></li>
-                <li><a href="#services"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                <li><a href="#service"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-hdd-stack-fill" viewBox="0 0 16 16">
                             <path
                                 d="M2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1" />
@@ -40,8 +38,8 @@
                 <li class="dropdown">
                     <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
                     <label for="dropdown-toggle">
-                        <i class="bi bi-menu-button"></i> 
-                        <span>DropDown</span> 
+                        <i class="bi bi-menu-button"></i>
+                        <span>DropDown</span>
                         <i class="bi bi-chevron-down"></i>
                     </label>
                     <ul class="submenu">
@@ -65,69 +63,50 @@
     </aside>
     <!-- Slide bar end -->
 
-    <!-- Section Hero start -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-container">
-                <h1>Alex Smith</h1>
-                <p>I'm a <span class="typed">Designer, Developer, Freelancer</span></p>
-            </div>
-            <div class="hero-img" style="background-color: rgba(0, 0, 0, 0.9);
-            object-fit: cover;
-            z-index: 1;">
-                <img src="images/hero-bg.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Section Hero end -->
+    <!-- main start -->
+    <main>
+        <section id="hero" class="hero">
+            <h1>Alex Smith</h1>
+            <p>I'm a <span class="typed">Designer, Developer, Freelancer</span></p>
+        </section>
 
-    <!-- About Section start-->
-    <section class="position" id="about">
-        <div class="container">
+        <section id="about">
             <h2 class=" h2">About</h2>
             <div class="under-score"></div>
             <p class="description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
                 fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
                 suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-
             <div class="about-content">
-                <div class="about-img">
-                    <img src="images/my-profile-img.jpg" alt="About Image">
-                </div>
+                <img src="images/my-profile-img.jpg" class="about-img" alt="About Image">
                 <div class="about-text">
                     <h3>Designer & Web Developer</h3>
-                    <p>
-                        I am a passionate developer with experience in creating beautiful and functional websites.
-                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem corporis error, fugit sed sint
+                        tenetur ullam molestiae consectetur nobis perferendis. </p>
                     <div class="about-right">
-                        <div class="first">
-                            <ul>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Birthday:</strong> <span>1 May
-                                        1995</span></li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Website:</strong>
-                                    <span>www.example.com</span>
-                                </li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Phone:</strong> <span>+123 456
-                                        7890</span></li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>City:</strong> <span>New York,
-                                        USA</span></li>
-                            </ul>
-                        </div>
-                        <div class="second">
-                            <ul>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Age:</strong> <span>30</span>
-                                </li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Degree:</strong>
-                                    <span>Master</span>
-                                </li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Email:</strong>
-                                    <span>email@example.com</span>
-                                </li>
-                                <li><i class="bi bi-chevron-compact-right"></i><strong>Freelance:</strong>
-                                    <span>Available</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Birthday:</strong> <span>1 May
+                                    1995</span></li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Website:</strong>
+                                <span>www.example.com</span>
+                            </li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Phone:</strong> <span>+123 456
+                                    7890</span></li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>City:</strong> <span>New York,
+                                    USA</span></li>
+                        </ul>
+                        <ul>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Age:</strong> <span>30</span>
+                            </li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Degree:</strong>
+                                <span>Master</span>
+                            </li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Email:</strong>
+                                <span>email@example.com</span>
+                            </li>
+                            <li><i class="bi bi-chevron-compact-right"></i><strong>Freelance:</strong>
+                                <span>Available</span>
+                            </li>
+                        </ul>
                     </div>
                     <div class="">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non natus animi excepturi earum!
@@ -137,118 +116,110 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section end-->
+        </section>
 
-    <!-- Facts section start -->
-    <section id="facts" class="position">
-        <div class="container">
-            <div class="facts-container">
-                <div class="fact-item">
-                    <i class="fas fa-smile"></i>
-                    <span class="counter">232</span>
+        <section id="facts" class="facts-container">
+            <ul class="fact-item">
+                <li><i class="fas fa-smile"></i></li>
+                <li><span class="counter">232</span></li>
+                <li>
                     <p><strong><i class="bi bi-smile"></i> Happy Clients</strong></p>
-                </div>
-                <div class="fact-item">
-                    <i class="fas fa-folder-open"></i>
-                    <span class="counter">521</span>
+                </li>
+            </ul>
+            <ul class="fact-item">
+                <li><i class="fas fa-folder-open"></i></li>
+                <li><span class="counter">521</span></li>
+                <li>
                     <p><strong>Projects</strong></p>
-                </div>
-                <div class="fact-item">
-                    <i class="fas fa-headset"></i>
-                    <span class="counter">1463</span>
+                </li>
+            </ul>
+            <ul class="fact-item">
+                <li><i class="fas fa-headset"></i></li>
+                <li><span class="counter">1463</span></li>
+                <li>
                     <p><strong>Hours Of Support</strong></p>
-                </div>
-                <div class="fact-item">
-                    <i class="fas fa-user-friends"></i>
-                    <span class="counter">15</span>
+                </li>
+            </ul>
+            <ul class="fact-item">
+                <li><i class="fas fa-user-friends"></i></li>
+                <li><span class="counter">15</span></li>
+                <li>
                     <p><strong>Hard Workers</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Facts section end -->
+                </li>
+            </ul>
+        </section>
 
-    <!-- skills section start -->
-    <section class="position" id="skills">
-        <div class="container">
+        <section class="position" id="skills">
             <h2 class="h2">Skills</h2>
             <div class="under-score"></div>
             <p class="description">Voici quelques-unes de mes compétences professionnelles :</p>
             <div class="skills-all">
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">HTML</div>
-                        <div class="skill-name">100%</div>
-                    </div>
-                    <div class="skill-bar">
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">HTML </p>
+                        <span>100%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">CSS</div>
-                        <div class="skill-name">90%</div>
-                    </div>
-                    <div class="skill-bar">
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">CSS </p>
+                        <span>90%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">JavaScript</div>
-                        <div class="skill-name">75%</div>
-                    </div>
-                    <div class="skill-bar">
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">JavaScript </p>
+                        <span>75%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">PHP</div>
-                        <div class="skill-name">80%</div>
-                    </div>
-                    <div class="skill-bar">
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">PHP </p>
+                        <span>80%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">WordPress/CMS</div>
-                        <div class="skill-name">70%</div>
-                    </div>
-                    <div class="skill-bar">
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">WordPress/CMS </p>
+                        <span>70%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-p">
-                        <div class="skill-name">Photoshop</div>
-                        <div class="skill-name">55%</div>
-                    </div>
-                    <div class="skill-bar">
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li class="skill-p">
+                        <p class="skill-name">Photoshop </p>
+                        <span>55%</span>
+                    </li>
+                    <li class="skill-bar">
                         <div class="skill-fill" style="width: 55%;"></div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <!-- skills section end -->
+        </section>
 
-    <!-- Resume section start -->
-    <section class="position">
-        <div class="container">
-            <div class="">
-                <h2 class="h2">Resume</h2>
-                <div class="under-score"></div>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore libero
-                    consequuntur nostrum unde rem praesentium quisquam dignissimos, perspiciatis expedita voluptatem non
-                    itaque ea tenetur. Impedit quis illo quasi beatae! Lorem, ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Unde rem repellendus natus labore pariatur magnam debitis eos at, omnis, recusandae veritatis,
-                    quod placeat! Debitis suscipit corrupti quia molestiae sapiente at!</p>
-            </div>
+        <section id="resume">
+            <h2 class="h2">Resume</h2>
+            <div class="under-score"></div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore libero
+                consequuntur nostrum unde rem praesentium quisquam dignissimos, perspiciatis expedita voluptatem non
+                itaque ea tenetur. Impedit quis illo quasi beatae! Lorem, ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Unde rem repellendus natus labore pariatur magnam debitis eos at, omnis, recusandae veritatis,
+                quod placeat! Debitis suscipit corrupti quia molestiae sapiente at!</p>
             <div class="container-resume">
                 <div class="resume-left">
                     <div class="sumary">
@@ -343,192 +314,149 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Resume section end -->
+        </section>
 
-    <!-- portfolio section start -->
-    <section class="position" id="portfolio">
-        <div class="container">
-            <h2 class="h2">PortFolio</h2>
-            <div class="under-score"></div>
-            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dolorem
-                perferendis,
-                illum incidunt in
-                natus animi, tenetur unde accusantium commodi consequuntur quasi eius id voluptatum ab iste vero
-                delectus
-                excepturi?</p>
-            <div class="portfolio-menu">
-                <ul>
-                    <li><a href="#">All</a></li>
+        <section class="position" id="portfolio">
+            <div class="container">
+                <h2 class="h2">PortFolio</h2>
+                <div class="under-score"></div>
+                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dolorem
+                    perferendis, illum incidunt in natus animi, tenetur unde accusantium commodi consequuntur quasi eius
+                    id voluptatum ab iste vero delectus excepturi?</p>
+                <ul class="portfolio-menu">
+                    <li><a href="#" class="active">All</a></li>
                     <li><a href="#">App</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Branding</a></li>
                     <li><a href="#">Book</a></li>
                 </ul>
-            </div>
-            <div class="images-portfolio">
-                <div class="position-img">
+                <div class="images-portfolio">
                     <img src="images/app-1.jpg" alt="">
                     <img src="images/app-2.jpg" alt="">
                     <img src="images/app-3.jpg" alt="">
                     <img src="images/books-1.jpg" alt="">
-                </div>
-                <div class="position-img">
                     <img src="images/branding-2.jpg" alt="">
                     <img src="images/branding-3.jpg" alt="">
                     <img src="images/product-1.jpg" alt="">
                     <img src="images/product-2.jpg" alt="">
-                </div>
-                <div class="position-img">
                     <img src="images/product-3.jpg" alt="">
                     <img src="images/branding-3.jpg" alt="">
                     <img src="images/books-2.jpg" alt="">
                     <img src="images/books-3.jpg" alt="">
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- portfolio section start -->
+        </section>
 
-    <!-- services section start -->
-    <section class="Service-st" id="service">
-        <div class="container">
+        <section id="service">
             <h2 class="h2">Services</h2>
             <div class="under-score"></div>
             <p class="description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
                 quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
                 alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            <div class="services">
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-briefcase"></i>
-                    </div>
+            <ul class="services">
+                <li class="service">
+                    <i class="bi bi-briefcase left"></i>
                     <div class="right">
                         <h3>Lorem Ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-card-checklist"></i>
-                    </div>
+                </li>
+                <li class="service">
+                    <i class="bi bi-card-checklist left"></i>
                     <div class="right">
                         <h3>Dolor Sitema</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-bar-chart"></i>
-                    </div>
+                </li>
+                <li class="service">
+                    <i class="bi bi-bar-chart left"></i>
                     <div class="right">
                         <h3>Sed up perspiciatis</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-            </div>
-            <div class="services">
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-binoculars"></i>
-                    </div>
+                </li>
+                <li class="service">
+                    <i class="bi bi-binoculars left"></i>
                     <div class="right">
                         <h3>Lorem Ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-brightness-high"></i>
-                    </div>
+                </li>
+                <li class="service">
+                    <i class="bi bi-brightness-high left"></i>
                     <div class="right">
                         <h3>Lorem Ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-                <div class="service">
-                    <div class="left">
-                        <i class="bi bi-calendar4-week"></i>
-                    </div>
+                </li>
+                <li class="service">
+                    <i class="bi bi-calendar4-week left"></i>
                     <div class="right">
                         <h3>Lorem Ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae
                             necessitatibus vitae ab.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- services section end -->
+                </li>
+            </ul>
+        </section>
 
-    <!-- testimonies start -->
-    <section class="position testi">
-        <div class="container">
+        <section class="testi" id="testimonie">
             <h2 class="h2">Testimonies</h2>
             <div class="under-score"></div>
             <p class="description">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            <div class="testimonies">
-                <div class="testimonies-item">
+            <ul class="testimonies">
+                <li class="testimonies-item">
                     <div class="testimonie">
-                        <p><i class="bi bi-quote quote-icon-left"></i><span>Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Libero cumque ab voluptates rem,
-                                excepturi illo impedit corporis tempora inventore ut quis.</span><i
-                                class="bi bi-quote quote-icon-right"></i></p>
-                        <div class="dark">
-                        </div>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cumque ab voluptates rem,
+                            excepturi illo impedit
+                            corporis tempora inventore ut quis.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                        <!-- <i class="bi bi-quote quote-icon-right dark"></i> -->
                     </div>
                     <div class="profil">
                         <img src="images/testimonials-1.jpg" alt="Profile">
-                        <h3>Sarah Dev</h3>
-                        <p>Web Designer</p>
+                        <h3>Saul Goodman</h3>
+                        <p>Ceo Fonser</p>
                     </div>
-                </div>
-
-                <div class="testimonies-item">
+                </li>
+                <li class="testimonies-item">
                     <div class="testimonie">
-                        <p><i class="bi bi-quote quote-icon-left"></i><span>Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Libero cumque ab voluptates rem,
-                                excepturi illo impedit corporis tempora inventore ut quis.</span><i
-                                class="bi bi-quote quote-icon-right"></i></p>
-                        <div class="dark">
-                        </div>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cumque ab voluptates rem,
+                            excepturi illo impedit corporis tempora inventore ut quis.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                        <i class="bi bi-quote quote-icon-right dark"></i>
                     </div>
                     <div class="profil">
                         <img src="images/testimonials-2.jpg" alt="Profile">
-                        <h3>Sarah Dev</h3>
-                        <p>Web Designer</p>
+                        <h3>Sarah Bae</h3>
+                        <p>Developper</p>
                     </div>
-                </div>
-
-                <div class="testimonies-item">
+                </li>
+                <li class="testimonies-item">
                     <div class="testimonie">
-                        <p><i class="bi bi-quote quote-icon-left"></i><span>Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Libero cumque ab voluptates rem,
-                                excepturi illo impedit corporis tempora inventore ut quis.</span><i
-                                class="bi bi-quote quote-icon-right"></i></p>
-                        <div class="dark">
-                        </div>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cumque ab voluptates rem,
+                            excepturi illo impedit corporis tempora inventore ut quis.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                        <!-- <i class="bi bi-quote quote-icon-right dark"></i> -->
                     </div>
                     <div class="profil">
                         <img src="images/testimonials-3.jpg" alt="Profile">
-                        <h3>Sarah Dev</h3>
+                        <h3>Jena Carlis</h3>
                         <p>Web Designer</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonies end -->
+                </li>
+            </ul>
+        </section>
 
-    <!-- section contact start -->
-    <section class="position" id="contact">
-        <div class="container">
+        <section id="contact">
             <h2 class="h2">Contact</h2>
             <div class="under-score"></div>
             <p class="description">
@@ -537,49 +465,43 @@
                 alias. Maiores, sit repellat.
             </p>
             <section class="forms">
-                <div class="adresses">
-                    <div class="adress">
-                        <div class="left">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
+                <ul class="adresses">
+                    <li class="adress">
+                        <i class="bi bi-geo-alt left-i"></i>
                         <div class="right">
                             <h3>Address</h3>
                             <p>A108 Adam Street, New York, NY 535022</p>
                         </div>
-                    </div>
-
-                    <div class="adress">
-                        <div class="left">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                        </div>
+                    </li>
+                    <li class="adress">
+                        <i class="bi bi-telephone flex-shrink-0 left-i"></i>
                         <div class="right">
                             <h3>Call Us</h3>
                             <p>+1 5589 55488 55</p>
                         </div>
-                    </div>
-
-                    <div class="adress">
-                        <div class="left">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                        </div>
+                    </li>
+                    <li class="adress">
+                        <i class="bi bi-envelope flex-shrink-0 left-i"></i>
                         <div class="right">
                             <h3>Email Us</h3>
                             <p>info@example.com</p>
                         </div>
-                    </div>
-                    <div class="adress">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
+                    </li>
+                    <li class="adress">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                            frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                </ul>
                 <form action="" class="contact-form">
                     <div class="contact-top">
                         <div class="m-1">
-                            <label for="name">Your Name</label>
-                            <input type="text" name="name" id="name" class="form-control" required="">
+                            <label for="name" class="m-1">Your Name</label>
+                            <input type="text" name="name" id="name" class="form-control m-1" required="">
                         </div>
                         <div class="m-2">
-                            <label for="">Your Name</label>
+                            <label for="">Your Email</label>
                             <input type="text">
                         </div>
                     </div>
@@ -594,16 +516,13 @@
                     <button type="submit">Send Message</button>
                 </form>
             </section>
-        </div>
-    </section>
-    <!-- section contact start -->
+        </section>
 
-    <!-- footer start -->
-    <div class="copyright">
-        <p>copyright 2025 <a href="">Sarah Dev</a> Tous droits reserves</p>
-    </div>
-    <!-- footer ende -->
-     
+        <footer class="copyright">
+            <p>copyright 2025 <a href="">Sarah Dev</a> Tous droits reserves</p>
+        </footer>
+    </main>
+    <!-- main end -->
 </body>
 
 </html>
